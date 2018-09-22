@@ -15,8 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh "docker run datetest"
-				sh "python ./helloDate.py"
+                sh "docker run semyonov4360/datetest"
             }
         }
     }
